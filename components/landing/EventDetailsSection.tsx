@@ -33,7 +33,7 @@ export function EventDetailsSection() {
             </p>
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-stone-100/20 rounded-2xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-blue-400/20 rounded-2xl flex items-center justify-center">
                   <MapPin className="h-6 w-6 text-stone-100" />
                 </div>
                 <div>
@@ -44,7 +44,7 @@ export function EventDetailsSection() {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-stone-100/20 rounded-2xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-blue-400/20 rounded-2xl flex items-center justify-center">
                   <Users className="h-6 w-6 text-stone-100" />
                 </div>
                 <div>
