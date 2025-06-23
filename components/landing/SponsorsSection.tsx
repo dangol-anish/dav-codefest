@@ -13,7 +13,7 @@ export function SponsorsSection() {
           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
             Powered By
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-stone-100/80">
             Partners who believe in innovation
           </p>
         </div>

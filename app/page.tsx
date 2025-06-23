@@ -18,9 +18,9 @@ export default function Home() {
       <EventDetailsSection />
       <TimelineSection />
       <EligibilitySection />
-      <RegistrationCTASection />
+      {/* <RegistrationCTASection /> */}
       <PrizesSection />
-      <SponsorsSection />
+      {/* <SponsorsSection /> */}
       <FAQsSection />
       <ContactSection />
       <FooterSection />

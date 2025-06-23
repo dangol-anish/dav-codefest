@@ -37,7 +37,7 @@ export function TimelineSection() {
           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
             Journey Timeline
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-stone-100/80">
             Track your path to innovation
           </p>
         </div>
@@ -71,15 +71,15 @@ export function TimelineSection() {
                         ? "text-white"
                         : step.status === "active"
                         ? "text-black"
-                        : "text-muted-foreground"
+                        : "text-stone-100/80"
                     }`}
                   />
                 </div>
                 {/* Content */}
                 <div className="flex-1">
-                  <div className="bg-background/80 backdrop-blur-xl rounded-2xl p-6 border border-blue-500/20 group-hover:border-blue-500/40 transition-all duration-300">
+                  <div className="bg-[#030615]/60 backdrop-blur-xl rounded-2xl p-6 border border-blue-500/20 group-hover:border-blue-500/40 transition-all duration-300">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl font-semibold text-foreground">
+                      <h3 className="text-xl font-semibold text-stone-100">
                         {step.title}
                       </h3>
                       <Badge
@@ -92,10 +92,10 @@ export function TimelineSection() {
                         }
                         className={
                           step.status === "completed"
-                            ? "bg-primary/20 text-primary border-primary/30"
+                            ? "bg-stone-100/20 text-stone-100 border-stone-100/30"
                             : step.status === "active"
                             ? "bg-yellow-500/20 text-yellow-400 border-yellow-500/30"
-                            : "bg-muted/20 text-muted-foreground border-muted/30"
+                            : "bg-muted/20 text-stone-100/80 border-muted/30"
                         }
                       >
                         {step.status === "completed"
@@ -105,7 +105,7 @@ export function TimelineSection() {
                           : "Upcoming"}
                       </Badge>
                     </div>
-                    <p className="text-muted-foreground">{step.date}</p>
+                    <p className="text-stone-100/80">{step.date}</p>
                   </div>
                 </div>
               </div>

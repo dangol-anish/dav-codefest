@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 const quickLinks = ["Home", "Register", "Timeline", "Prizes", "Contact"];
-const resources = ["Rulebook", "FAQs", "Terms", "Privacy"];
 
 export function FooterSection() {
   return (
@@ -12,11 +11,11 @@ export function FooterSection() {
             <h3 className="text-3xl font-bold text-[#f2eeef] mb-4">
               DAV CodeFest 2025
             </h3>
-            <p className="text-muted-foreground mb-4 max-w-md">
+            <p className="text-stone-100/80 mb-4 max-w-md">
               Organized by DAV IT Club. Building the future, one line of code at
               a time.
             </p>
-            <div className="text-sm text-muted-foreground">
+            <div className="text-sm text-stone-100/80">
               © 2025 DAV College. All rights reserved.
             </div>
           </div>
@@ -27,21 +26,7 @@ export function FooterSection() {
                 <Link
                   key={link}
                   href="#"
-                  className="block text-muted-foreground hover:text-primary transition-colors"
-                >
-                  {link}
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h4 className="font-semibold text-[#f2eeef] mb-4">Resources</h4>
-            <div className="space-y-3">
-              {resources.map((link) => (
-                <Link
-                  key={link}
-                  href="#"
-                  className="block text-muted-foreground hover:text-primary transition-colors"
+                  className="block text-stone-100/80 hover:text-primary transition-colors"
                 >
                   {link}
                 </Link>

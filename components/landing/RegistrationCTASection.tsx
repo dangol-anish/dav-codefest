@@ -13,7 +13,7 @@ export function RegistrationCTASection() {
         <h2 className="text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
           Secure Your Spot
         </h2>
-        <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-xl text-stone-100/80 mb-12 max-w-2xl mx-auto">
           Limited seats available. Join Nepal&apos;s most anticipated hackathon
           and turn your ideas into reality.
         </p>
@@ -37,7 +37,7 @@ export function RegistrationCTASection() {
             </Button>
             <div className="flex items-center gap-4">
               <Separator className="flex-1" />
-              <span className="text-muted-foreground text-sm">OR</span>
+              <span className="text-stone-100/80 text-sm">OR</span>
               <Separator className="flex-1" />
             </div>
             <div className="flex justify-center">
@@ -50,7 +50,7 @@ export function RegistrationCTASection() {
               </div>
             </div>
             <div className="text-center space-y-2">
-              <p className="text-muted-foreground">
+              <p className="text-stone-100/80">
                 <strong className="text-primary">Deadline:</strong> July 31,
                 2025
               </p>

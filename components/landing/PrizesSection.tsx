@@ -37,7 +37,7 @@ export function PrizesSection() {
           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
             Rewards & Recognition
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-stone-100/80">
             Celebrating innovation with substantial rewards
           </p>
         </div>
@@ -52,13 +52,13 @@ export function PrizesSection() {
                   <Trophy
                     className={`h-16 w-16 mx-auto mb-6 bg-gradient-to-br ${prize.color} bg-clip-text text-transparent`}
                   />
-                  <h3 className="text-2xl font-bold text-foreground mb-2">
+                  <h3 className="text-2xl font-bold text-stone-100 mb-2">
                     {prize.place} Place
                   </h3>
                   <div className="text-4xl font-bold text-primary mb-4">
                     {prize.amount}
                   </div>
-                  <p className="text-muted-foreground">{prize.bonus}</p>
+                  <p className="text-stone-100/80">{prize.bonus}</p>
                 </div>
               </div>
             </div>
@@ -77,12 +77,10 @@ export function PrizesSection() {
                   className="bg-[#030615]/50 backdrop-blur-xl rounded-2xl p-6 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300"
                 >
                   <Icon className="h-10 w-10 text-primary mx-auto mb-4" />
-                  <h4 className="text-lg font-semibold text-foreground mb-2">
+                  <h4 className="text-lg font-semibold text-stone-100 mb-2">
                     {benefit.title}
                   </h4>
-                  <p className="text-muted-foreground text-sm">
-                    {benefit.desc}
-                  </p>
+                  <p className="text-stone-100/80 text-sm">{benefit.desc}</p>
                 </div>
               );
             })}

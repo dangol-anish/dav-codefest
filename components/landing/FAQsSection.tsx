@@ -32,7 +32,7 @@ export function FAQsSection() {
           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
             Common Questions
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-stone-100/80">
             Everything you need to know
           </p>
         </div>
@@ -43,7 +43,7 @@ export function FAQsSection() {
                 <h3 className="text-xl font-semibold text-primary mb-4">
                   {faq.question}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-stone-100/80 leading-relaxed">
                   {faq.answer}
                 </p>
               </div>
