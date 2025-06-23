@@ -29,7 +29,7 @@ export function EventDetailsSection() {
               </span>
             </h2>
             <p className="text-xl text-stone-100/80 mb-12 leading-relaxed">
-              Join changemakers building solutions for the future .
+              Join changemakers building solutions for the future.
             </p>
             <div className="space-y-6">
               <div className="flex items-center gap-4">
@@ -78,7 +78,7 @@ export function EventDetailsSection() {
               <div className="bg-muted/50 rounded-2xl h-80 flex items-center justify-center text-stone-100/80 mb-6">
                 <iframe
                   title="DAV College Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.349964479836!2d85.3147283150617!3d27.67863498280306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190a2e2c1e2b%3A0x7e7e2e8e9e8e2e2b!2sDAV%20College!5e0!3m2!1sen!2snp!4v1687600000000!5m2!1sen!2snp"
+                  src="https://www.google.com/maps?q=DAV+College,+Jawalakhel&hl=en&z=16&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, borderRadius: "1rem" }}
@@ -94,9 +94,6 @@ export function EventDetailsSection() {
                 </p>
                 <p className="mb-2">
                   <strong>City:</strong> Jawalakhel, Lalitpur
-                </p>
-                <p>
-                  <strong>Accessibility:</strong> Public transport available
                 </p>
               </div>
             </div>
