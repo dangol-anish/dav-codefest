@@ -2,12 +2,11 @@ import { Calendar, MapPin, Users } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const themes = [
-  "Innovation",
-  "Climate Tech",
-  "Social Impact",
-  "AI/ML",
-  "Blockchain",
-  "IoT",
+  "Education Innovation",
+  "Cybersecurity Solutions ",
+  "Business Technology",
+  "Healthcare Innovation ",
+  "Social Impact Tech",
 ];
 
 export function EventDetailsSection() {
@@ -16,10 +15,10 @@ export function EventDetailsSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm mb-8">
-              <Calendar className="h-4 w-4 text-primary" />
-              <span className="text-primary text-sm font-medium">
-                August 15-16, 2025
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-stone-100/10 border border-primary/20 backdrop-blur-sm mb-8">
+              <Calendar className="h-4 w-4 text-stone-100/80" />
+              <span className="text-stone-100/80 text-sm font-medium">
+                July 25-27, 2025
               </span>
             </div>
             <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
@@ -29,43 +28,41 @@ export function EventDetailsSection() {
                 Infinite Possibilities.
               </span>
             </h2>
-            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-              Join Nepal's most prestigious hackathon where brilliant minds
-              converge to solve tomorrow's challenges. From climate tech to
-              social innovation, your ideas can change the world.
+            <p className="text-xl text-stone-100/80 mb-12 leading-relaxed">
+              Join changemakers building solutions for the future .
             </p>
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-primary" />
+                <div className="w-12 h-12 bg-stone-100/20 rounded-2xl flex items-center justify-center">
+                  <MapPin className="h-6 w-6 text-stone-100" />
                 </div>
                 <div>
-                  <div className="text-foreground font-semibold">
-                    DAV College, Jawalakhel
+                  <div className="text-stone-100 font-semibold">
+                    D.A.V. College, Jawalakhel
                   </div>
-                  <div className="text-muted-foreground">Lalitpur, Nepal</div>
+                  <div className="text-stone-100/80">Lalitpur, Nepal</div>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-2xl flex items-center justify-center">
-                  <Users className="h-6 w-6 text-primary" />
+                <div className="w-12 h-12 bg-stone-100/20 rounded-2xl flex items-center justify-center">
+                  <Users className="h-6 w-6 text-stone-100" />
                 </div>
                 <div>
-                  <div className="text-foreground font-semibold">
-                    500+ Innovators
+                  <div className="text-stone-100 font-semibold">
+                    100+ Innovators
                   </div>
-                  <div className="text-muted-foreground">
+                  <div className="text-stone-100/80">
                     Students, developers, designers
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex flex-wrap gap-3 mt-12">
-              {themes.map((theme) => (
+              {themes.map((theme, idx) => (
                 <Badge
-                  key={theme}
+                  key={idx}
                   variant="secondary"
-                  className="bg-primary/10 text-primary border-primary/30 px-4 py-2 text-sm"
+                  className="bg-stone-100/10 text-stone-100 border-primary/30 px-4 py-2 text-sm text-left whitespace-normal max-w-xs"
                 >
                   {theme}
                 </Badge>
@@ -75,19 +72,23 @@ export function EventDetailsSection() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-3xl blur-3xl" />
             <div className="relative bg-[#030615]/80 backdrop-blur-xl rounded-3xl p-8 border border-blue-500/20">
-              <h3 className="text-2xl font-semibold text-primary mb-6">
+              <h3 className="text-2xl font-semibold text-stone-100 mb-6">
                 Event Location
               </h3>
-              <div className="bg-muted/50 rounded-2xl h-80 flex items-center justify-center text-muted-foreground mb-6">
-                <div className="text-center">
-                  <MapPin className="h-12 w-12 mx-auto mb-4 text-primary" />
-                  <div className="text-lg font-medium text-foreground">
-                    Interactive Map
-                  </div>
-                  <div className="text-sm">Coming Soon</div>
-                </div>
+              <div className="bg-muted/50 rounded-2xl h-80 flex items-center justify-center text-stone-100/80 mb-6">
+                <iframe
+                  title="DAV College Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.349964479836!2d85.3147283150617!3d27.67863498280306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190a2e2c1e2b%3A0x7e7e2e8e9e8e2e2b!2sDAV%20College!5e0!3m2!1sen!2snp!4v1687600000000!5m2!1sen!2snp"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, borderRadius: "1rem" }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-2xl w-full h-full"
+                ></iframe>
               </div>
-              <div className="text-muted-foreground">
+              <div className="text-stone-100/80">
                 <p className="mb-2">
                   <strong>Address:</strong> DAV College Campus
                 </p>

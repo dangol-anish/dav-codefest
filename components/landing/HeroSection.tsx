@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { QrCode, ArrowRight, FileText } from "lucide-react";
+import { QrCode, FileText } from "lucide-react";
 
 export function HeroSection() {
   const [timeLeft, setTimeLeft] = useState({

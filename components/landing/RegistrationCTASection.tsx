@@ -14,8 +14,8 @@ export function RegistrationCTASection() {
           Secure Your Spot
         </h2>
         <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Limited seats available. Join Nepal's most anticipated hackathon and
-          turn your ideas into reality.
+          Limited seats available. Join Nepal&apos;s most anticipated hackathon
+          and turn your ideas into reality.
         </p>
         <div className="bg-[#030615]/80 backdrop-blur-xl rounded-3xl p-12 border border-blue-500/20 max-w-2xl mx-auto">
           <div className="space-y-8">
