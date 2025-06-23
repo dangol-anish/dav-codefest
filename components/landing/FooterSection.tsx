@@ -26,17 +26,41 @@ export function FooterSection() {
             </div>
           </div>
           <div>
-            <h4 className="font-semibold text-[#f2eeef] mb-4">Quick Links</h4>
-            <div className="space-y-3">
+            <h4 className="font-semibold text-xl text-[#f2eeef] mb-4">
+              Quick Links
+            </h4>
+            <div className="space-y-3 ">
               {quickLinks.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="block text-stone-100/80 hover:text-stone-100  hover:text-primary transition-colors"
+                  className="block text-stone-100/80 hover:text-stone-100 transition-colors"
                 >
                   {link.label}
                 </Link>
               ))}
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            <h4 className="font-semibold text-xl text-[#f2eeef] mb-4">
+              Supported By
+            </h4>
+            <div className="flex gap-4">
+              <img
+                src="/logo1.svg"
+                alt="Logo 1"
+                className="w-20 h-20 object-contain"
+              />
+              <img
+                src="/logo2.svg"
+                alt="Logo 2"
+                className="w-20 h-20 object-contain"
+              />
+              <img
+                src="/logo3.svg"
+                alt="Logo 3"
+                className="w-20 h-20 object-contain"
+              />
             </div>
           </div>
         </div>

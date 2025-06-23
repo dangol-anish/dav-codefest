@@ -83,7 +83,7 @@ export function HeroSection() {
           <Button
             size="lg"
             variant="outline"
-            className="hover:text-white cursor-pointer
+            className="hover:text-white bg-blue-950 cursor-pointer
              group border-2 border-blue-500/30 text-blue-400 hover:bg-blue-500/10 hover:border-blue-500/60 px-12 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300"
             onClick={() => setShowQR(!showQR)}
           >
@@ -106,7 +106,7 @@ export function HeroSection() {
             <Button
               size="lg"
               variant="outline"
-              className=" hover:text-white cursor-pointer group border-2 border-blue-500/30 text-blue-400 hover:bg-blue-500/10 hover:border-blue-500/60 px-12 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300"
+              className=" hover:text-white bg-blue-950 cursor-pointer group border-2 border-blue-500/30 text-blue-400 hover:bg-blue-500/10 hover:border-blue-500/60 px-12 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300"
             >
               <FileText className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
               Code of Conduct
@@ -122,7 +122,11 @@ export function HeroSection() {
             <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 animate-fade-in">
               <div className="bg-[#030615]/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-blue-500/20 hover:border-blue-500/40 transition-all duration-300">
                 <div className="w-64 h-64 bg-gray-100 rounded-2xl flex items-center justify-center text-gray-600 font-medium">
-                  QR Registration
+                  <img
+                    src="/qr.jpeg"
+                    alt="QR Code"
+                    className="w-48 h-48 object-contain"
+                  />
                 </div>
               </div>
             </div>
