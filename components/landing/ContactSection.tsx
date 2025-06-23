@@ -36,7 +36,7 @@ const socials = [
 export function ContactSection() {
   return (
     <section id="contact" className="py-32 px-4 bg-[#030615]">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
             Get In Touch

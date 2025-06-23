@@ -12,7 +12,7 @@ const quickLinks = [
 export function FooterSection() {
   return (
     <footer className="py-16 px-4 border-t border-[#ebebeb] bg-[#030615]/50">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
             <h3 className="text-3xl font-bold text-[#f2eeef] mb-4">

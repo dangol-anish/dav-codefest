@@ -10,7 +10,7 @@ import { FooterSection } from "@/components/landing/FooterSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#030615] text-[#f2eeef] overflow-hidden px-6 md:px-4">
+    <div className="min-h-screen text-[#f2eeef] overflow-hidden">
       <HeroSection />
       <FeaturesSection />
       <EventDetailsSection />

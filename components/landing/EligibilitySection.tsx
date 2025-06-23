@@ -23,7 +23,7 @@ const eligibility = [
 export function EligibilitySection() {
   return (
     <section className="py-32 px-4">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center px-4">
         <h2 className="text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
           Who Can Join?
         </h2>

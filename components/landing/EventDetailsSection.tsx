@@ -12,7 +12,7 @@ const themes = [
 export function EventDetailsSection() {
   return (
     <section className="py-32 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-stone-100/10 border border-primary/20 backdrop-blur-sm mb-8">
