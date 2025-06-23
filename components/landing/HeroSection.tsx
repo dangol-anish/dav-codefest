@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { QrCode, FileText } from "lucide-react";
+import Image from "next/image";
 
 export function HeroSection() {
   const [timeLeft, setTimeLeft] = useState({
@@ -122,9 +123,11 @@ export function HeroSection() {
             <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 animate-fade-in">
               <div className="bg-[#030615]/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-blue-500/20 hover:border-blue-500/40 transition-all duration-300">
                 <div className="w-64 h-64 bg-gray-100 rounded-2xl flex items-center justify-center text-gray-600 font-medium">
-                  <img
+                  <Image
                     src="/qr.jpeg"
                     alt="QR Code"
+                    width={192}
+                    height={192}
                     className="w-48 h-48 object-contain"
                   />
                 </div>

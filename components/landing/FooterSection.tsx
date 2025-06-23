@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const quickLinks = [
   { label: "Home", href: "#home" },
@@ -46,19 +47,26 @@ export function FooterSection() {
               Supported By
             </h4>
             <div className="flex gap-4">
-              <img
+              <Image
                 src="/logo1.svg"
                 alt="Logo 1"
+                width={80}
+                height={80}
                 className="w-20 h-20 object-contain"
+                priority
               />
-              <img
+              <Image
                 src="/logo2.svg"
                 alt="Logo 2"
+                width={80}
+                height={80}
                 className="w-20 h-20 object-contain"
               />
-              <img
+              <Image
                 src="/logo3.svg"
                 alt="Logo 3"
+                width={80}
+                height={80}
                 className="w-20 h-20 object-contain"
               />
             </div>
