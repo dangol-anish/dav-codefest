@@ -33,7 +33,10 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center"
+    >
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black" />
@@ -61,11 +64,11 @@ export function HeroSection() {
           Code the Future. Build Tomorrow. Transform Ideas into Reality.
         </p>
         {/* Countdown Timer */}
-        <div className="grid grid-cols-4 gap-6 mb-16 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16 max-w-md md:max-w-3xl mx-auto w-full">
           {Object.entries(timeLeft).map(([unit, value]) => (
-            <div key={unit} className="relative group">
+            <div key={unit} className="relative group w-full max-w-xs mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative bg-gray-900/80 backdrop-blur-xl rounded-2xl p-6 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300">
+              <div className="relative bg-gray-900/80 backdrop-blur-xl rounded-2xl p-6 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 text-center">
                 <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">
                   {value}
                 </div>

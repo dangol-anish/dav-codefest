@@ -35,7 +35,7 @@ const socials = [
 
 export function ContactSection() {
   return (
-    <section className="py-32 px-4 bg-[#030615]">
+    <section id="contact" className="py-32 px-4 bg-[#030615]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
@@ -96,9 +96,7 @@ export function ContactSection() {
                         <div className="text-stone-100 text-sm">
                           {social.label}
                         </div>
-                        <div
-                          className={`font-medium text-stone-100/60 group-hover:underline`}
-                        >
+                        <div className={`font-medium text-stone-100/60 `}>
                           {social.value}
                         </div>
                       </div>

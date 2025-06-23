@@ -30,7 +30,7 @@ const timelineSteps = [
 
 export function TimelineSection() {
   return (
-    <section className="py-32 px-4 relative">
+    <section id="timeline" className="py-32 px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900/30 to-black" />
       <div className="relative max-w-5xl mx-auto">
         <div className="text-center mb-20">

@@ -1,6 +1,12 @@
 import Link from "next/link";
 
-const quickLinks = ["Home", "Register", "Timeline", "Prizes", "Contact"];
+const quickLinks = [
+  { label: "Home", href: "#home" },
+  { label: "Register", href: "#register" },
+  { label: "Timeline", href: "#timeline" },
+  { label: "Prizes", href: "#prizes" },
+  { label: "Contact", href: "#contact" },
+];
 
 export function FooterSection() {
   return (
@@ -24,11 +30,11 @@ export function FooterSection() {
             <div className="space-y-3">
               {quickLinks.map((link) => (
                 <Link
-                  key={link}
-                  href="#"
-                  className="block text-stone-100/80 hover:text-primary transition-colors"
+                  key={link.label}
+                  href={link.href}
+                  className="block text-stone-100/80 hover:text-stone-100  hover:text-primary transition-colors"
                 >
-                  {link}
+                  {link.label}
                 </Link>
               ))}
             </div>

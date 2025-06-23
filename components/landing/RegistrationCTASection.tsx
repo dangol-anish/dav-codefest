@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function RegistrationCTASection() {
   return (
-    <section className="py-32 px-4 relative">
+    <section id="register" className="py-32 px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-cyan-500/10" />
       <div className="relative max-w-4xl mx-auto text-center">
         <h2 className="text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">

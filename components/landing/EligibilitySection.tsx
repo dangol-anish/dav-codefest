@@ -4,19 +4,18 @@ const eligibility = [
   {
     title: "Students & Graduates",
     description:
-      "All academic levels welcome from colleges and universities across Nepal and beyond",
+      "All academic levels welcome from colleges and universities across Nepal",
     icon: Users,
   },
   {
-    title: "Solo or Team",
-    description:
-      "Participate individually or form teams of up to 4 members. We'll help with team matching",
+    title: "Teams",
+    description: "Participate in teams from 3 up to 5 members",
     icon: Target,
   },
   {
     title: "All Experience Levels",
     description:
-      "From beginners to experts. Mentorship and workshops available for skill development",
+      "From beginners to experts. Mentorship available for skill development",
     icon: Zap,
   },
 ];
@@ -32,13 +31,13 @@ export function EligibilitySection() {
           Open to all innovators, creators, and problem-solvers ready to make an
           impact
         </p>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 items-stretch">
           {eligibility.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div key={index} className="group relative">
+              <div key={index} className="group relative h-full">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
-                <div className="relative bg-[#030615]/80 backdrop-blur-xl rounded-3xl p-8 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-500 group-hover:transform group-hover:scale-105">
+                <div className="relative bg-[#030615]/80 backdrop-blur-xl rounded-3xl p-8 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-500 group-hover:transform group-hover:scale-105 flex flex-col justify-between h-full">
                   <Icon className="h-12 w-12 text-stone-100 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300" />
                   <h3 className="text-xl font-semibold text-stone-100 mb-4">
                     {item.title}
