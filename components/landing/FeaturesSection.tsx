@@ -9,7 +9,7 @@ const features = [
   {
     icon: Globe,
     title: "Hybrid Experience",
-    description: "Join us in-person or participate remotely from anywhere",
+    description: "Join us in-person for this event",
   },
   {
     icon: Target,
