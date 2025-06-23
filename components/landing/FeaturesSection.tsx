@@ -47,7 +47,7 @@ export function FeaturesSection() {
                   <h3 className="text-xl font-semibold text-stone-100 mb-4">
                     {feature.title}
                   </h3>
-                  <p className="text-stone-100/80 leading-relaxed">
+                  <p className="hidden md:block text-stone-100/80 leading-relaxed">
                     {feature.description}
                   </p>
                 </div>

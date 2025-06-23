@@ -22,7 +22,7 @@ export function EventDetailsSection() {
               </span>
             </div>
             <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-              <span className="text-[#f2eeef]">Two Days.</span>
+              <span className="text-[#f2eeef]">Three Days.</span>
               <br />
               <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 Infinite Possibilities.
@@ -52,12 +52,15 @@ export function EventDetailsSection() {
                     100+ Innovators
                   </div>
                   <div className="text-stone-100/80">
-                    Students, developers, designers
+                    Students, Developers, Designers
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex flex-wrap gap-3 mt-12">
+              <h3 className="text-xl font-semibold text-stone-100 mb-4 w-full">
+                Themes
+              </h3>
               {themes.map((theme, idx) => (
                 <Badge
                   key={idx}

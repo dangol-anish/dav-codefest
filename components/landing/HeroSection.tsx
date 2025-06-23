@@ -36,7 +36,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center"
+      className="relative py-16 md:min-h-screen md:flex md:items-center md:justify-center"
     >
       {/* Animated Background */}
       <div className="absolute inset-0">
@@ -80,12 +80,11 @@ export function HeroSection() {
             </div>
           ))}
         </div>
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center w-full max-w-md mx-auto">
           <Button
             size="lg"
             variant="outline"
-            className="hover:text-white bg-blue-950 cursor-pointer
-             group border-2 border-blue-500/30 text-blue-400 hover:bg-blue-500/10 hover:border-blue-500/60 px-12 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300"
+            className="w-full sm:w-auto hover:text-white bg-blue-950 cursor-pointer group border-2 border-blue-500/30 text-blue-400 hover:bg-blue-500/10 hover:border-blue-500/60 px-12 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300"
             onClick={() => setShowQR(!showQR)}
           >
             <QrCode className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
@@ -93,21 +92,25 @@ export function HeroSection() {
           </Button>
           <Button
             size="lg"
-            className="group cursor-pointer relative bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold px-12 py-6 text-lg rounded-2xl transition-all duration-300 transform hover:scale-105"
+            className="w-full sm:w-auto group cursor-pointer relative bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold px-12 py-6 text-lg rounded-2xl transition-all duration-300 transform hover:scale-105"
             onClick={() =>
               window.open(
-                "https://forms.google.com/dav-codefest-2025",
+                "https://docs.google.com/forms/d/e/1FAIpQLScu7YOzdz3O9q9VH8AuUj4vAKdJLjh6tWrbMnaplqSe8H7g0A/viewform?usp=dialog",
                 "_blank"
               )
             }
           >
             <span className="flex items-center gap-2">Register Now</span>
           </Button>
-          <a href="/code-of-conduct.pdf" download className="inline-block">
+          <a
+            href="/code-of-conduct.pdf"
+            download
+            className="w-full sm:w-auto inline-block"
+          >
             <Button
               size="lg"
               variant="outline"
-              className=" hover:text-white bg-blue-950 cursor-pointer group border-2 border-blue-500/30 text-blue-400 hover:bg-blue-500/10 hover:border-blue-500/60 px-12 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300"
+              className="w-full sm:w-auto hover:text-white bg-blue-950 cursor-pointer group border-2 border-blue-500/30 text-blue-400 hover:bg-blue-500/10 hover:border-blue-500/60 px-12 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300"
             >
               <FileText className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
               Code of Conduct

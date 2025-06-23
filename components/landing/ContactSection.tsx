@@ -4,7 +4,7 @@ import { Mail, Phone, MessageCircle, Facebook, Instagram } from "lucide-react";
 import Link from "next/link";
 
 const contacts = [
-  { icon: Mail, label: "Email", value: "codefest@dav.edu.np" },
+  { icon: Mail, label: "Email", value: "cognitoitclub@davnepal.edu.np" },
   { icon: Phone, label: "Phone", value: "+977-9763443311" },
   { icon: MessageCircle, label: "WhatsApp", value: "+977-9763443311" },
 ];

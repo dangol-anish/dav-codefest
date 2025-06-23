@@ -26,7 +26,7 @@ const benefits = [
   {
     icon: Trophy,
     title: "Participation Certificates",
-    desc: "Blockchain verified",
+    desc: "Award Recognition",
   },
 
   { icon: Zap, title: "All-inclusive", desc: "Food & networking" },
@@ -45,39 +45,110 @@ export function PrizesSection() {
             Celebrating innovation with substantial rewards
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {prizes.map((prize, index) => {
-            const Icon = prize.icon;
-            let bg = "";
-            let hoverShadow = "";
-            if (prize.place === "1st") {
-              bg = "bg-[#fad601]/80";
-              hoverShadow = "group-hover:shadow-[0_0_20px_0_#fad601cc]";
-            } else if (prize.place === "2nd") {
-              bg = "bg-[#f4f4f5]/80";
-              hoverShadow = "group-hover:shadow-[0_0_20px_0_#f4f4f5cc]";
-            } else if (prize.place === "3rd") {
-              bg = "bg-[#cd7f32]/80";
-              hoverShadow = "group-hover:shadow-[0_0_20px_0_#cd7f32cc]";
-            }
-            return (
-              <div key={index} className="group relative ">
-                <div
-                  className={`relative ${bg} rounded-3xl p-8 border border-blue-500/20 transition-all duration-300 ${hoverShadow} group-hover:scale-105`}
-                >
-                  <div className="text-center">
-                    <Icon className="h-16 w-16 mx-auto mb-6 text-stone-100" />
-                    <h3 className="text-2xl font-bold text-stone-100 mb-2">
-                      {prize.place} Place
-                    </h3>
-                    <div className="text-4xl font-bold text-stone-100 mb-4">
-                      {prize.amount}
+        <div className="grid md:grid-cols-3 gap-8 mb-16 items-end">
+          {/* Podium order: 2nd, 1st, 3rd */}
+          <div className="flex flex-col items-center justify-end h-full">
+            {prizes
+              .filter((p) => p.place === "2nd")
+              .map((prize, index) => {
+                const Icon = prize.icon;
+                return (
+                  <div key={index} className="group relative w-full">
+                    <div
+                      className={`relative bg-[#030615]/80 rounded-3xl p-4 md:p-8 border-2 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_24px_4px_#a8a29e55]`}
+                      style={{ borderColor: "#a8a29e" }}
+                    >
+                      <div className="text-center">
+                        <Icon
+                          className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-6"
+                          style={{ color: "#a8a29e" }}
+                        />
+                        <h3
+                          className="text-2xl font-bold mb-2"
+                          style={{ color: "#a8a29e" }}
+                        >
+                          2nd Place
+                        </h3>
+                        <div
+                          className="text-4xl font-bold mb-4"
+                          style={{ color: "#a8a29e" }}
+                        >
+                          NPR 30,000
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            );
-          })}
+                );
+              })}
+          </div>
+          <div className="flex flex-col items-center justify-end h-full">
+            {prizes
+              .filter((p) => p.place === "1st")
+              .map((prize, index) => {
+                const Icon = prize.icon;
+                return (
+                  <div key={index} className="group relative w-full">
+                    <div
+                      className={`relative bg-[#030615]/80 rounded-3xl p-6 md:p-14 border-2 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_24px_4px_#fad60155]`}
+                      style={{ borderColor: "#fad601" }}
+                    >
+                      <div className="text-center">
+                        <Icon
+                          className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-6"
+                          style={{ color: "#fad601" }}
+                        />
+                        <h3
+                          className="text-2xl font-bold mb-2"
+                          style={{ color: "#fad601" }}
+                        >
+                          1st Place
+                        </h3>
+                        <div
+                          className="text-4xl font-bold mb-4"
+                          style={{ color: "#fad601" }}
+                        >
+                          NPR 50,000
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+          </div>
+          <div className="flex flex-col items-center justify-end h-full">
+            {prizes
+              .filter((p) => p.place === "3rd")
+              .map((prize, index) => {
+                const Icon = prize.icon;
+                return (
+                  <div key={index} className="group relative w-full">
+                    <div
+                      className={`relative bg-[#030615]/80 rounded-3xl p-3 md:p-6 border-2 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_24px_4px_#cd7f3255]`}
+                      style={{ borderColor: "#cd7f32" }}
+                    >
+                      <div className="text-center">
+                        <Icon
+                          className="h-12 w-12 md:h-16 md:w-16 mx-auto mb-6"
+                          style={{ color: "#cd7f32" }}
+                        />
+                        <h3
+                          className="text-2xl font-bold mb-2"
+                          style={{ color: "#cd7f32" }}
+                        >
+                          3rd Place
+                        </h3>
+                        <div
+                          className="text-4xl font-bold mb-4"
+                          style={{ color: "#cd7f32" }}
+                        >
+                          NPR 20,000
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+          </div>
         </div>
         <div className="text-center">
           <h3 className="text-3xl font-semibold mb-12 text-stone-100 ">
