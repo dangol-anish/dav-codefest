@@ -1,7 +1,5 @@
 import {
-  Trophy,
   Award,
-  Zap,
   Crown,
   Medal,
   Gift,
