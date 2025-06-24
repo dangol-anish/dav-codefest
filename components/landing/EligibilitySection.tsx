@@ -1,22 +1,22 @@
-import { Users, Target, Zap } from "lucide-react";
+import { Users, GraduationCap, BarChart3 } from "lucide-react";
 
 const eligibility = [
   {
     title: "Students & Graduates",
     description:
       "All academic levels welcome from colleges and universities across Nepal",
-    icon: Users,
+    icon: GraduationCap,
   },
   {
     title: "Teams",
     description: "Participate in teams from 3 up to 5 members",
-    icon: Target,
+    icon: Users,
   },
   {
     title: "All Experience Levels",
     description:
       "From beginners to experts. Mentorship available for skill development",
-    icon: Zap,
+    icon: BarChart3,
   },
 ];
 

@@ -1,18 +1,18 @@
-import { Code, Globe, Target, Rocket } from "lucide-react";
+import { Timer, Users2, Lightbulb, Rocket } from "lucide-react";
 
 const features = [
   {
-    icon: Code,
+    icon: Timer,
     title: "48-Hour Sprint",
     description: "Intensive coding marathon with mentorship and support",
   },
   {
-    icon: Globe,
+    icon: Users2,
     title: "Hybrid Experience",
     description: "Join us in-person for this event",
   },
   {
-    icon: Target,
+    icon: Lightbulb,
     title: "Real Impact",
     description: "Build solutions for climate, innovation, and social good",
   },

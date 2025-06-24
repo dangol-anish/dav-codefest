@@ -36,7 +36,7 @@ const socials = [
 export function ContactSection() {
   return (
     <section id="contact" className="py-32 px-4 bg-[#030615]">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
             Get In Touch
@@ -47,7 +47,7 @@ export function ContactSection() {
         </div>
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <div className="bg-[#030615]/80 backdrop-blur-xl rounded-2xl p-8 border border-blue-500/20">
+            <div className="bg-[#030615]/80 backdrop-blur-xl rounded-2xl w-full p-4 md:p-8 border border-blue-500/20">
               <h3 className="text-2xl font-semibold text-stone-100 mb-6">
                 Direct Contact
               </h3>
@@ -74,7 +74,7 @@ export function ContactSection() {
             </div>
           </div>
           <div className="space-y-8">
-            <div className="bg-[#030615]/80 backdrop-blur-xl rounded-2xl p-8 border border-blue-500/20">
+            <div className="bg-[#030615]/80 backdrop-blur-xl rounded-2xl w-full p-4 md:p-8 border border-blue-500/20">
               <h3 className="text-2xl font-semibold text-stone-100 mb-6">
                 Follow Our Journey
               </h3>

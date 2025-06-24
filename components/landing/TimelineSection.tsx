@@ -60,7 +60,7 @@ export function TimelineSection() {
                       ? "bg-primary shadow-lg shadow-primary/50"
                       : step.status === "active"
                       ? "bg-yellow-500 shadow-lg shadow-yellow-500/50"
-                      : "bg-muted border border-border"
+                      : "bg-stone-900 border border-stone-900"
                   }`}
                 >
                   <Icon

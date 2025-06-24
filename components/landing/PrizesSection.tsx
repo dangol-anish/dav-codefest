@@ -1,4 +1,13 @@
-import { Trophy, Award, Zap, Crown, Medal } from "lucide-react";
+import {
+  Trophy,
+  Award,
+  Zap,
+  Crown,
+  Medal,
+  Gift,
+  ScrollText,
+  UtensilsCrossed,
+} from "lucide-react";
 
 const prizes = [
   {
@@ -22,14 +31,13 @@ const prizes = [
 ];
 
 const benefits = [
-  { icon: Award, title: "Premium Swag", desc: "Exclusive merchandise" },
+  { icon: Gift, title: "Premium Swag", desc: "Exclusive merchandise" },
   {
-    icon: Trophy,
+    icon: ScrollText,
     title: "Participation Certificates",
     desc: "Award Recognition",
   },
-
-  { icon: Zap, title: "All-inclusive", desc: "Food & networking" },
+  { icon: UtensilsCrossed, title: "All-inclusive", desc: "Food & networking" },
 ];
 
 export function PrizesSection() {
