@@ -5,25 +5,25 @@ const timelineSteps = [
   {
     status: "completed",
     title: "Registration Opens",
-    date: "June 1, 2025",
+    date: "June 25, 2025",
     icon: CheckCircle,
   },
   {
     status: "active",
     title: "Application Review",
-    date: "July 15, 2025",
+    date: "July 14, 2025",
     icon: Loader,
   },
   {
     status: "pending",
     title: "Main Event",
-    date: "August 15-16, 2025",
+    date: "July 25-27, 2025",
     icon: Circle,
   },
   {
     status: "pending",
     title: "Results & Awards",
-    date: "August 16, 2025",
+    date: "July 27, 2025",
     icon: Circle,
   },
 ];
