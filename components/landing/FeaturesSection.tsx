@@ -3,7 +3,7 @@ import { Timer, Users2, Lightbulb, Rocket } from "lucide-react";
 const features = [
   {
     icon: Timer,
-    title: "48-Hour Sprint",
+    title: "72-Hour Sprint",
     description: "Intensive coding marathon with mentorship and support",
   },
   {
