@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "D.A.V Codefest 2025",
   description: "D.A.V Codefest 2025 official website",
   icons: {
-    icon: "/logo1.svg",
+    icon: "/logo2.svg",
   },
 };
 

@@ -127,7 +127,7 @@ export function HeroSection() {
               <div className="bg-[#030615]/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-blue-500/20 hover:border-blue-500/40 transition-all duration-300">
                 <div className="w-64 h-64 bg-gray-100 rounded-2xl flex items-center justify-center text-gray-600 font-medium">
                   <Image
-                    src="/qr.jpeg"
+                    src="/qr.svg"
                     alt="QR Code"
                     width={192}
                     height={192}

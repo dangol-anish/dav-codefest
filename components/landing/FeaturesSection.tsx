@@ -36,13 +36,13 @@ export function FeaturesSection() {
             More than just a hackathon. A launchpad for your next breakthrough.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <div key={index} className="group relative">
+              <div key={index} className="group relative h-full">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
-                <div className="relative bg-[#030615]/80 backdrop-blur-xl rounded-3xl p-8 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-500 group-hover:transform group-hover:scale-105">
+                <div className="relative bg-[#030615]/80 backdrop-blur-xl rounded-3xl p-8 border border-blue-500/20 hover:border-blue-500/40 transition-all duration-500 group-hover:transform group-hover:scale-105 h-full flex flex-col justify-between">
                   <Icon className="h-12 w-12 text-blue-400 mb-6 group-hover:scale-110 transition-transform duration-300" />
                   <h3 className="text-xl font-semibold text-stone-100 mb-4">
                     {feature.title}
