@@ -7,6 +7,7 @@ const quickLinks = [
   { label: "Timeline", href: "#timeline" },
   { label: "Prizes", href: "#prizes" },
   { label: "Contact", href: "#contact" },
+  { label: "Code of Conduct", href: "/code-of-conduct.pdf", target: "_blank" },
 ];
 
 export function FooterSection() {
@@ -46,29 +47,47 @@ export function FooterSection() {
             <h4 className="font-semibold text-xl text-[#f2eeef] mb-4">
               Supported By
             </h4>
-            <div className="flex gap-4">
-              <Image
-                src="/logo1.svg"
-                alt="Logo 1"
-                width={80}
-                height={80}
-                className="w-20 h-20 object-contain"
-                priority
-              />
-              <Image
-                src="/logo2.svg"
-                alt="Logo 2"
-                width={80}
-                height={80}
-                className="w-20 h-20 object-contain"
-              />
-              <Image
-                src="/logo3.svg"
-                alt="Logo 3"
-                width={80}
-                height={80}
-                className="w-20 h-20 object-contain"
-              />
+            <div className="flex flex-col gap-2 items-center">
+              <div className="flex gap-4 mb-2">
+                <Image
+                  src="/logo1.svg"
+                  alt="Logo 1"
+                  width={80}
+                  height={80}
+                  className="w-20 h-20 object-contain"
+                  priority
+                />
+                <Image
+                  src="/logo2.svg"
+                  alt="Logo 2"
+                  width={80}
+                  height={80}
+                  className="w-20 h-20 object-contain"
+                />
+                <Image
+                  src="/logo3.svg"
+                  alt="Logo 3"
+                  width={80}
+                  height={80}
+                  className="w-20 h-20 object-contain"
+                />
+              </div>
+              <div className="flex gap-4">
+                <Image
+                  src="/logo4.jpg"
+                  alt="Logo 4"
+                  width={80}
+                  height={80}
+                  className="w-20 h-20 object-contain"
+                />
+                <Image
+                  src="/logo5.jpg"
+                  alt="Logo 5"
+                  width={80}
+                  height={80}
+                  className="w-20 h-20 object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
