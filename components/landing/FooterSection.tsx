@@ -7,15 +7,15 @@ const quickLinks = [
   { label: "Timeline", href: "#timeline" },
   { label: "Prizes", href: "#prizes" },
   { label: "Contact", href: "#contact" },
-  { label: "Code of Conduct", href: "/code-of-conduct.pdf", target: "_blank" },
+  { label: "Code of Conduct", href: "/code-of-conduct" },
 ];
 
 export function FooterSection() {
   return (
     <footer className="py-16 px-4 border-t border-[#ebebeb]/20 bg-[#030615]/50">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
-          <div className="md:col-span-2">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+          <div>
             <h3 className="text-3xl font-bold text-[#f2eeef] mb-4">
               DAV CodeFest 2025
             </h3>
@@ -27,64 +27,49 @@ export function FooterSection() {
               © 2025 DAV College. All rights reserved.
             </div>
           </div>
-          <div>
-            <h4 className="font-semibold text-xl text-[#f2eeef] mb-4">
-              Quick Links
-            </h4>
-            <div className="space-y-3 ">
-              {quickLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="block text-stone-100/80 hover:text-stone-100 transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+          <div className="flex flex-row flex-wrap justify-center items-center gap-6 md:gap-8">
+            <div className="flex flex-col items-center">
+              <span className="text-xs md:text-sm text-[#f2eeef] mb-1 uppercase tracking-wide">
+                Organized by
+              </span>
+              <Image
+                src="/logo1.svg"
+                alt="Cognito Logo"
+                width={96}
+                height={96}
+                className="w-20 h-20 object-contain mt-3"
+                priority
+              />
             </div>
-          </div>
-          <div className="flex flex-col items-center gap-4">
-            <h4 className="font-semibold text-xl text-[#f2eeef] mb-4">
-              Supported By
-            </h4>
-            <div className="flex flex-col gap-2 items-center">
-              <div className="flex gap-4 mb-2">
-                <Image
-                  src="/logo1.svg"
-                  alt="Logo 1"
-                  width={80}
-                  height={80}
-                  className="w-20 h-20 object-contain"
-                  priority
-                />
-                <Image
-                  src="/logo2.svg"
-                  alt="Logo 2"
-                  width={80}
-                  height={80}
-                  className="w-20 h-20 object-contain"
-                />
+            <div className="flex flex-col items-center">
+              <span className="text-xs md:text-sm text-[#f2eeef] mb-1 uppercase tracking-wide">
+                Logistic Partner
+              </span>
+              <Image
+                src="/logo4.svg"
+                alt="Whizzy Logo"
+                width={96}
+                height={96}
+                className="w-20 h-20 object-contain mt-3"
+              />
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="text-xs md:text-sm text-[#f2eeef] mb-1 uppercase tracking-wide">
+                Supported by
+              </span>
+              <div className="flex flex-row gap-4 mt-3">
                 <Image
                   src="/logo3.svg"
-                  alt="Logo 3"
-                  width={80}
-                  height={80}
-                  className="w-20 h-20 object-contain"
-                />
-              </div>
-              <div className="flex gap-4">
-                <Image
-                  src="/logo4.jpg"
-                  alt="Logo 4"
-                  width={80}
-                  height={80}
+                  alt="DAV College Logo"
+                  width={96}
+                  height={96}
                   className="w-20 h-20 object-contain"
                 />
                 <Image
-                  src="/logo5.jpg"
-                  alt="Logo 5"
-                  width={80}
-                  height={80}
+                  src="/logo5.svg"
+                  alt="DAV International College Logo"
+                  width={96}
+                  height={96}
                   className="w-20 h-20 object-contain"
                 />
               </div>

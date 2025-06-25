@@ -93,7 +93,7 @@ export function EventDetailsSection() {
               </div>
               <div className="text-stone-100/80">
                 <p className="mb-2">
-                  <strong>Address:</strong> DAV College Campus
+                  <strong>Address:</strong> DAV Complex
                 </p>
                 <p className="mb-2">
                   <strong>City:</strong> Jawalakhel, Lalitpur

@@ -37,7 +37,29 @@ module.exports = {
       animation: {
         "fade-in": "fade-in 0.3s ease-out",
       },
+      typography: ({ theme }) => ({
+        invert: {
+          css: {
+            "--tw-prose-body": theme("colors.stone[300]"),
+            "--tw-prose-headings": theme("colors.white"),
+            "--tw-prose-lead": theme("colors.stone[400]"),
+            "--tw-prose-links": theme("colors.blue[400]"),
+            "--tw-prose-bold": theme("colors.white"),
+            "--tw-prose-counters": theme("colors.stone[400]"),
+            "--tw-prose-bullets": theme("colors.blue[400]"),
+            "--tw-prose-hr": theme("colors.stone[700]"),
+            "--tw-prose-quotes": theme("colors.stone[100]"),
+            "--tw-prose-quote-borders": theme("colors.blue[500]"),
+            "--tw-prose-captions": theme("colors.stone[400]"),
+            "--tw-prose-code": theme("colors.white"),
+            "--tw-prose-pre-code": theme("colors.stone[300]"),
+            "--tw-prose-pre-bg": theme("colors.stone[900]"),
+            "--tw-prose-th-borders": theme("colors.stone[600]"),
+            "--tw-prose-td-borders": theme("colors.stone[700]"),
+          },
+        },
+      }),
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

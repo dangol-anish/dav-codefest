@@ -102,11 +102,7 @@ export function HeroSection() {
           >
             <span className="flex items-center gap-2">Register Now</span>
           </Button>
-          <a
-            href="/code-of-conduct.pdf"
-            download
-            className="w-full sm:w-auto inline-block"
-          >
+          <a href="/code-of-conduct" className="w-full sm:w-auto inline-block">
             <Button
               size="lg"
               variant="outline"
@@ -139,6 +135,32 @@ export function HeroSection() {
           </>
         )}
       </div>
+      {/* Scroll Down Mouse Animation */}
+      <div className="hidden md:flex absolute left-1/2 bottom-8 -translate-x-1/2 z-20 flex-col items-center select-none">
+        <span className="sr-only">Scroll down</span>
+        <div className="w-6 h-10 rounded-2xl border-2 border-blue-400 flex items-start justify-center relative">
+          <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-1.5 animate-scroll-wheel" />
+        </div>
+      </div>
+      <style jsx>{`
+        @keyframes scroll-wheel {
+          0% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+          70% {
+            transform: translateY(12px);
+            opacity: 0.5;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 0.2;
+          }
+        }
+        .animate-scroll-wheel {
+          animation: scroll-wheel 1.4s infinite;
+        }
+      `}</style>
     </section>
   );
 }

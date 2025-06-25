@@ -2,13 +2,13 @@ import { Users, GraduationCap, BarChart3 } from "lucide-react";
 
 const eligibility = [
   {
-    title: "Students & Graduates",
+    title: "Undergraduate Students",
     description:
       "All academic levels welcome from colleges and universities across Nepal",
     icon: GraduationCap,
   },
   {
-    title: "Teams",
+    title: "Solo, Duo, or Teams",
     description: "Participate in teams from 3 up to 5 members",
     icon: Users,
   },
