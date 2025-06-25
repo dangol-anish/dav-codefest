@@ -229,12 +229,12 @@ export default function CodeOfConductPage() {
           </p>
           <p className="mb-4">
             Any attempts to misrepresent contributions, mislead judges or
-            organizers, or undermine another team's work will be viewed as
+            organizers, or undermine another team&apos;s work will be viewed as
             violations of ethical conduct
           </p>
           <p>
             Participation in D.A.V. Codefest implies agreement to all guidelines
-            outlined here. We're excited to see your ideas thrive in a
+            outlined here. We&apos;re excited to see your ideas thrive in a
             respectful and collaborative environment.
           </p>
         </section>

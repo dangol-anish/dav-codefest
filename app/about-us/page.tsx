@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { Mail, Linkedin, Globe } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 
 const committeeMembers = [
   {

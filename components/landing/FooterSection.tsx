@@ -1,14 +1,4 @@
-import Link from "next/link";
 import Image from "next/image";
-
-const quickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Register", href: "#register" },
-  { label: "Timeline", href: "#timeline" },
-  { label: "Prizes", href: "#prizes" },
-  { label: "Contact", href: "#contact" },
-  { label: "Code of Conduct", href: "/code-of-conduct" },
-];
 
 export function FooterSection() {
   return (
