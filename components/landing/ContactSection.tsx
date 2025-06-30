@@ -29,7 +29,7 @@ const socials = [
     label: "Discord",
     value: "Join Community",
     color: "text-blue-400",
-    href: "https://discord.gg/PZH4AbAW",
+    href: "https://discord.gg/2Xd4vKCT8v",
   },
 ];
 

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { QrCode, FileText } from "lucide-react";
 import Image from "next/image";
+import { useQRFocus } from "@/lib/QRFocusContext";
 
 export function HeroSection() {
   const [timeLeft, setTimeLeft] = useState({
@@ -12,7 +13,7 @@ export function HeroSection() {
     minutes: 0,
     seconds: 0,
   });
-  const [showQR, setShowQR] = useState(false);
+  const { qrFocused, setQRFocused } = useQRFocus();
 
   useEffect(() => {
     const targetDate = new Date("2025-07-25T00:00:00+05:45").getTime();
@@ -85,7 +86,7 @@ export function HeroSection() {
             size="lg"
             variant="outline"
             className="w-full sm:w-auto hover:text-white bg-blue-950 cursor-pointer group border-2 border-blue-500/30 text-blue-400 hover:bg-blue-500/10 hover:border-blue-500/60 px-12 py-6 text-lg rounded-2xl backdrop-blur-sm transition-all duration-300"
-            onClick={() => setShowQR(!showQR)}
+            onClick={() => setQRFocused(!qrFocused)}
           >
             <QrCode className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
             Quick Access
@@ -113,11 +114,11 @@ export function HeroSection() {
             </Button>
           </a>
         </div>
-        {showQR && (
+        {qrFocused && (
           <>
             <div
               className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 cursor-pointer animate-fade-in"
-              onClick={() => setShowQR(false)}
+              onClick={() => setQRFocused(false)}
             />
             <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 animate-fade-in">
               <div className="bg-[#030615]/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-blue-500/20 hover:border-blue-500/40 transition-all duration-300">
@@ -136,12 +137,14 @@ export function HeroSection() {
         )}
       </div>
       {/* Scroll Down Mouse Animation */}
-      <div className="hidden md:flex absolute left-1/2 bottom-8 -translate-x-1/2 z-20 flex-col items-center select-none">
-        <span className="sr-only">Scroll down</span>
-        <div className="w-6 h-10 rounded-2xl border-2 border-blue-400 flex items-start justify-center relative">
-          <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-1.5 animate-scroll-wheel" />
+      {!qrFocused && (
+        <div className="hidden md:flex absolute left-1/2 bottom-8 -translate-x-1/2 z-20 flex-col items-center select-none">
+          <span className="sr-only">Scroll down</span>
+          <div className="w-6 h-10 rounded-2xl border-2 border-blue-400 flex items-start justify-center relative">
+            <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-1.5 animate-scroll-wheel" />
+          </div>
         </div>
-      </div>
+      )}
       <style jsx>{`
         @keyframes scroll-wheel {
           0% {
