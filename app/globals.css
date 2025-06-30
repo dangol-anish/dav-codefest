@@ -127,3 +127,9 @@ body {
   scroll-behavior: smooth;
   overscroll-behavior: none;
 }
+
+/* Fix bullet point alignment for multi-line items in code of conduct */
+ul.list-inside li {
+  padding-left: 1em;
+  text-indent: -1em;
+}

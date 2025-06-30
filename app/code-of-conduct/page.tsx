@@ -13,14 +13,14 @@ export default function CodeOfConductPage() {
         misconduct.
       </p>
 
-      <div className="space-y-12">
+      <div className="space-y-12 text-gray-400">
         <section>
           <h2 className="text-3xl font-bold text-blue-400 mt-12 mb-6 border-b border-blue-500/20 pb-2">
             Ethics & Originality
           </h2>
           <ul className="list-disc list-inside space-y-2 pl-4">
             <li>
-              All projects must be built during the A.V. Codefest event
+              All projects must be built during the D.A.V. Codefest event
               timeline. Although the use of pre-existing libraries or resources
               is permitted, reusing prior codebases without full disclosure is
               prohibited and may result in disqualification.
@@ -40,7 +40,7 @@ export default function CodeOfConductPage() {
             <li>Open to students studying any undergraduate</li>
             <li>Participants must currently be enrolled in a college or</li>
             <li>
-              Organizing team members from A.V. College are not eligible to
+              Organizing team members from D.A.V. College are not eligible to
               compete.
             </li>
             <li>
@@ -67,7 +67,7 @@ export default function CodeOfConductPage() {
               <strong className="font-bold text-gray-100">
                 non-vegetarian food items
               </strong>{" "}
-              on A.V. College grounds is strictly forbidden.
+              on D.A.V. College grounds is strictly forbidden.
             </li>
             <li>
               Participants are also not allowed to come to college bounds while
@@ -82,7 +82,7 @@ export default function CodeOfConductPage() {
             Zero Tolerance for Harassment
           </h2>
           <p>
-            A.V. College is a harassment-free space. Unacceptable behavior
+            D.A.V. College is a harassment-free space. Unacceptable behavior
             includes but is not limited to:
           </p>
           <ul className="list-disc list-inside space-y-2 pl-4 mt-4">
@@ -104,7 +104,7 @@ export default function CodeOfConductPage() {
               approach any organizing committee member
             </li>
             <li>
-              Look for A.V. Codefest team members with designated Codefest IDs
+              Look for D.A.V. Codefest team members with designated Codefest IDs
               or uniforms.
             </li>
             <li>All reports are confidential and will be addressed</li>
@@ -121,9 +121,9 @@ export default function CodeOfConductPage() {
             evidence.
           </p>
 
-          <h3 className="text-xl font-bold text-gray-100 mt-8 mb-4">
+          <h2 className="text-3xl font-bold text-blue-400 mt-12 mb-6 border-b border-blue-500/20 pb-2">
             Consequences of Violations
-          </h3>
+          </h2>
           <p>
             Breaching the Code of Conduct may result in one or more of the
             following:
@@ -240,8 +240,8 @@ export default function CodeOfConductPage() {
         </section>
 
         <div className="mt-16 p-6 bg-[#101828]/50 border border-blue-500/20 rounded-xl text-center italic font-medium text-gray-300">
-          ***All decisions made by the college and the organizing committee
-          shall be final and binding with respect to the event.***
+          All decisions made by the college and the organizing committee shall
+          be final and binding with respect to the event.
         </div>
       </div>
     </div>
